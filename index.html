@@ -16,9 +16,11 @@ layout: default
 </section>
 
 <section id="blog"> <!-- Blog -->
+    <article>
     {% for post in site.posts %}
         <h2><a href="{{ post.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></h2>
     {% endfor %}
+    </article>
 </section>
 
 <section id="photos"> <!-- PHOTOS -->
